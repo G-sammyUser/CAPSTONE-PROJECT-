@@ -1,0 +1,26 @@
+Movie Listing API
+Movie Listing API is a FastAPI application for managing movie listings, user authentication, ratings, and comments
+Features
+- User Authentication: Secure registration and login with JWT tokens.
+- Movie Management: CRUD operations for movies.
+- Movie Ratings: Users can rate movies on a scale of 1 to 5.
+- Comments: Users can comment on and reply to movie comments.
+
+Installation
+1. Clone the repo.
+2. Install dependencies: `pip install -r requirements.txt`.
+3. Set up environment variables for the database and JWT.
+4. Run with: `uvicorn app.main:app --reload`.
+
+API Endpoints
+- /auth/register: Register a new user.
+- /auth/login: Log in and obtain a token.
+- /movies/movies/: Create and retrieve movies.
+- /ratings/movies/{movie_id}/rate: Rate a movie.
+- /comments/movies/{movie_id}/comments: Comment on a movie.
+
+Testing
+Run `pytest` to execute tests.
+
+Deployment
+Deploy using `uvicorn` in production.
