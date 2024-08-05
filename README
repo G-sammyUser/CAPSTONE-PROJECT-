@@ -24,3 +24,7 @@ Run `pytest` to execute tests.
 
 Deployment
 Deploy using `uvicorn` in production.
+
+Hosted URL
+The API is currently running locally on `http://127.0.0.1:8000`. To access the API, ensure the server is running and visit the URL in your browser or use it in your API client.
+
